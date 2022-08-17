@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crypto to USD</title>
+	<style>
+		.container {
+		max-width: 500px;
+		margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 style="text-align: center;color: brown;"><u>USD to Crypto Converter</u></h1>
+		<form action="#" method="post">
+			<h2>Enter USD amount :</h2>
+			<input type="number" placeholder="Enter Amount" name="amount" min="0" value="{{amount}}" required="required">
+			<h2>Select crypto :</h2>
+			<select required name="to_c" id="to_c">
+				<option value="">Choose crypto currecny</option>
+				<option value="bitcoin">BTC</option>
+                <option value="ethereum">ETH</option>
+				<option value="litecoin">LTC</option>
+			</select>
+			<h2 style="text-align: center;"><input type="submit" style="width: 60px;height: 30px;" value="Convert"></h2>
+		</form>
+        <h2>{{crypto}} value is {{result}}</h2>
+	</div>
+</body>
+</html>
